@@ -12,15 +12,15 @@ const App = () => {
   }
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
-  // Calculate total pages based on the data length and items per page
+  
   const totalPages = Math.ceil(filterData.length !== 0 ? filterData.length / itemsPerPage : userData.length / itemsPerPage);
 
-  // Get the indexes for slicing userData for the current page
+
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filterData.length !== 0 ? filterData.slice(indexOfFirstItem, indexOfLastItem) : userData.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Handler for page change
+  
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
