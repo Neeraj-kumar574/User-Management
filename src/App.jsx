@@ -54,7 +54,7 @@ const App = () => {
         <div className='my-5 flex items-center justify-between gap-5 flex-wrap'>
           <form action="">
             <div className="relative">
-              <input onChange={(e) => handleFilter2(e?.target?.value)} type="text" id="default-search" className="block w-full bg-blue-500 text-white max-w-xs px-4 py-3 text-sm font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-100 focus:outline-none leading-relaxed"
+              <input onChange={(e) => handleFilter2(e?.target?.value)} type="text" id="default-search" className="block w-full bg-blue-500 text-white max-w-xs px-4 py-3 text-sm font-normal shadow-xs text-gray-900  border border-gray-300 rounded-full placeholder-gray-100 focus:outline-none leading-relaxed"
                 placeholder="Search Username" required="" />
             </div>
           </form>
